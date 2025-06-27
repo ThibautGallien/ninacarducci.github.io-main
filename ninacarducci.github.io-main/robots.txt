@@ -1,0 +1,38 @@
+# Robots.txt pour Nina Carducci - Photographe
+
+# Autoriser tous les robots d'indexation
+User-agent: *
+Allow: /
+
+# Interdire l'accès aux fichiers de développement
+Disallow: /.idea/
+Disallow: /assets/bootstrap/
+Disallow: /assets/maugallery.js
+Disallow: /assets/scripts.js
+
+# Autoriser explicitement les ressources importantes pour le SEO
+Allow: /assets/images/
+Allow: /assets/style.css
+Allow: /index.html
+
+# Règles spécifiques pour les moteurs de recherche principaux
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+# Localisation du sitemap
+Sitemap: https://ninacarducci.github.io/sitemap.xml
+
+# Informations additionnelles
+# Site: Nina Carducci - Photographe professionnelle
+# Localisation: Île-de-France, France
+# Services: Shooting photo, Retouches, Albums photo
+# Contact: https://ninacarducci.github.io/#contact
